@@ -2,6 +2,14 @@
 export default [
   {
     icon: "solar:streets-bold-duotone",
+    text: "ユーザー管理",
+    items: [
+
+    ],
+  },
+
+  {
+    icon: "solar:streets-bold-duotone",
     text: "在庫管理",
     items: [
       {

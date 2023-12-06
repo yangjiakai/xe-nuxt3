@@ -4,23 +4,22 @@
 * @Description: 
 -->
 <script setup lang="ts">
-import { useAppStore } from '@/stores/app';
-import ApexGradientChart from '@/components/charts/apexchart/ApexGradientChart.vue';
+import { useAppStore } from "@/stores/app";
+import ApexGradientChart from "@/components/charts/apexchart/ApexGradientChart.vue";
 
-import StatsCard from '@/components/dashboard/StatsCard.vue';
-import VisitsCard from '~/components/dashboard/VisitsCard.vue';
-import SalesCard from '~/components/dashboard/SalesCard.vue';
-import VisitsLineCard from '~/components/dashboard/VisitsLineCard.vue';
-import TableCard from '~/components/dashboard/TableCard.vue';
-import ActivityCard from '~/components/dashboard/ActivityCard.vue';
-import TicketsCard from '~/components/dashboard/TicketsCard.vue';
+import StatsCard from "@/components/dashboard/StatsCard.vue";
+import VisitsCard from "~/components/dashboard/VisitsCard.vue";
+import SalesCard from "~/components/dashboard/SalesCard.vue";
+import VisitsLineCard from "~/components/dashboard/VisitsLineCard.vue";
+import TableCard from "~/components/dashboard/TableCard.vue";
+import ActivityCard from "~/components/dashboard/ActivityCard.vue";
+import TicketsCard from "~/components/dashboard/TicketsCard.vue";
+import Stepper from "~/components/dashboard/Stepper.vue";
 
 useHead({
-  title: 'Lux-Nuxt3',
-  meta: [
-    { name: 'description', content: 'Lux-Nuxt3-Vuetify3-Admin' }
-  ],
-})
+  title: "Lux-Nuxt3",
+  meta: [{ name: "description", content: "Lux-Nuxt3-Vuetify3-Admin" }],
+});
 
 const appStore = useAppStore();
 const desserts = [
@@ -85,6 +84,9 @@ const text = ref("sssss");
     </v-col>
     <v-col cols="12" lg="6">
       <TableCard />
+    </v-col>
+    <v-col cols="12" lg="6">
+      <Stepper />
     </v-col>
   </v-row>
 </template>
