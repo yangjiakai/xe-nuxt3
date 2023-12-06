@@ -2,7 +2,7 @@ export default [
   {
     icon: "solar:figma-bold-duotone",
     text: "Widget",
-    regex: /^\/widget/,
+
     items: [
       {
         icon: "solar:clapperboard-edit-line-duotone",

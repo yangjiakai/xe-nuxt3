@@ -1,8 +1,18 @@
 export default [
   {
+    icon: "solar:streets-bold-duotone",
+    text: "Landing Pages",
+    items: [
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Toolbar",
+        link: "/landings/toolbar",
+      },
+    ],
+  },
+  {
     icon: "solar:library-bold-duotone",
     text: "UI Components",
-    regex: /^\/ui/,
     items: [
 
       // Alert
@@ -69,9 +79,58 @@ export default [
         icon: "solar:pin-list-line-duotone",
         text: "TimeLine",
         link: "/ui/timeline",
+      },
+      {
+        icon: "solar:pin-list-line-duotone",
+        text: "Form",
+        link: "/ui/form",
+      },
+      {
+        icon: "solar:pin-list-line-duotone",
+        text: "Table",
+        link: "/ui/table",
       }
+
     ],
 
-  }
+  },
+  {
+    icon: "solar:figma-bold-duotone",
+    text: "Widget",
+
+    items: [
+      {
+        icon: "solar:clapperboard-edit-line-duotone",
+        text: "MD Editor",
+        link: "/widget/md-editor",
+      },
+      {
+        icon: "solar:video-library-line-duotone",
+        text: "Lottie Animation",
+        link: "/widget/lottie-animation",
+      },
+      {
+        icon: "solar:atom-line-duotone",
+        text: "Color",
+        link: "/widget/color",
+      },
+      {
+        icon: "solar:atom-line-duotone",
+        text: "Gradient",
+        link: "/widget/gradient",
+      },
+      {
+        icon: "solar:code-line-duotone",
+        text: "Faker Api",
+        link: "/widget/faker-api",
+      },
+      {
+        icon: "solar:code-line-duotone",
+        text: "Skeleton",
+        link: "/widget/skeleton",
+      },
+
+    ],
+  },
 
 ];

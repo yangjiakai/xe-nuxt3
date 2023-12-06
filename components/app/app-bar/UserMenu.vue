@@ -6,7 +6,6 @@
 <script setup lang="ts">
 const router = useRouter();
 
-
 const handleLogout = () => {
   router.push("auth/login");
 };
@@ -22,7 +21,11 @@ const navs = [
 </script>
 
 <template>
-  <v-menu :close-on-content-click="false" location="bottom right" transition="slide-y-transition">
+  <v-menu
+    :close-on-content-click="false"
+    location="bottom right"
+    transition="slide-y-transition"
+  >
     <!-- ---------------------------------------------- -->
     <!-- Activator Btn -->
     <!-- ---------------------------------------------- -->
@@ -32,7 +35,8 @@ const navs = [
           <v-avatar color="#eee" size="40">
             <v-img
               src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo.png"
-              alt="external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo"></v-img>
+              alt="external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo"
+            ></v-img>
           </v-avatar>
         </v-badge>
       </v-btn>
@@ -47,13 +51,13 @@ const navs = [
             <v-avatar color="#eee" size="40">
               <v-img
                 src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo.png"
-                alt="external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo"></v-img>
+                alt="external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo"
+              ></v-img>
             </v-avatar>
           </template>
 
           <v-list-item-title class="font-weight-bold text-primary">
             YANG J.K.
-
           </v-list-item-title>
           <v-list-item-subtitle>
             <!-- {{ $store.state.user.email  }} -->
@@ -67,7 +71,13 @@ const navs = [
       <!-- ---------------------------------------------- -->
 
       <v-list variant="flat" elevation="0" :lines="false" density="compact">
-        <v-list-item color="primary" v-for="(nav, i) in navs" :key="i" link density="compact">
+        <v-list-item
+          color="primary"
+          v-for="(nav, i) in navs"
+          :key="i"
+          link
+          density="compact"
+        >
           <template v-slot:prepend>
             <v-avatar size="30">
               <v-icon>{{ nav.icon }}</v-icon>
@@ -99,7 +109,12 @@ const navs = [
             </v-list-item-subtitle>
           </div>
         </v-list-item>
-        <v-list-item color="primary" link @click="handleLogout" density="compact">
+        <v-list-item
+          color="primary"
+          link
+          @click="handleLogout"
+          density="compact"
+        >
           <template v-slot:prepend>
             <v-avatar size="30">
               <v-icon>mdi-logout</v-icon>

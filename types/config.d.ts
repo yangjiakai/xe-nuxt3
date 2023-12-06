@@ -1,7 +1,5 @@
 interface Config {
   theme: ThemeConfig.Config;
-  locales: any;
-  currency: CurrencyConfig.Config;
 }
 
 declare namespace CurrencyConfig {

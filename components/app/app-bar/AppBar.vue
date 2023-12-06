@@ -4,9 +4,8 @@
 * @Description: 
 -->
 <script setup lang="ts">
-import LanguageSwitcher from './LanguageSwitcher.vue';
-import UserMenu from './UserMenu.vue';
-import { useAppStore } from '@/stores/app';
+import UserMenu from "./UserMenu.vue";
+import { useAppStore } from "@/stores/app";
 const appStore = useAppStore();
 </script>
 
@@ -27,10 +26,7 @@ const appStore = useAppStore();
     </v-btn>
     <v-divider vertical thickness="2" inset class="ml-5 mr-1"></v-divider>
 
-    <LanguageSwitcher />
-
     <UserMenu />
-
   </v-app-bar>
 </template>
 
