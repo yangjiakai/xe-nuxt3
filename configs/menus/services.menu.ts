@@ -4,7 +4,11 @@ export default [
     icon: "solar:streets-bold-duotone",
     text: "ユーザー管理",
     items: [
-
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "用户一览",
+        link: "/user/list",
+      },
     ],
   },
 

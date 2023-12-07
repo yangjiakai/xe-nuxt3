@@ -4,7 +4,7 @@ export const useAppStore = defineStore({
   id: 'app',
   state: () => ({
     mainSidebar: true,
-
+    darkMode: false
   }),
   persist: [
     {
@@ -19,6 +19,7 @@ export const useAppStore = defineStore({
   actions: {
     toggleSidebar() {
       this.mainSidebar = !this.mainSidebar
+      this.darkMode = !this.darkMode
     }
   },
 })
