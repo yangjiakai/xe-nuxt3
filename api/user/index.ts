@@ -3,7 +3,7 @@ import axios from "axios";
 
 // change the access key to your own
 // const ACCESS_KEY = import.meta.env.NUXT_UNSPLASH_ACCESS_KEY;
-const ACCESS_KEY = "8dRNM9z37RgMdNxLIY24_FGbDfO6mqowmdsDXLgimdg2116";
+const ACCESS_KEY = "8dRNM9z37RgMdNxLIY24_FGbDfO6mqowmdsDXLgi";
 
 const instance = axios.create({
   baseURL: "https://api.unsplash.com",

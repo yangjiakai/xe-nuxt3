@@ -1,7 +1,7 @@
 import '@mdi/font/css/materialdesignicons.css'
 import "@/assets/scss/main.scss";
 import { createVuetify } from 'vuetify'
-
+import VDateField from '@wdns/vuetify-date-field';
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 import * as labsComponents from 'vuetify/labs/components'
@@ -41,5 +41,5 @@ export default defineNuxtPlugin((app) => {
   })
   app.vueApp.use(vuetify);
   app.vueApp.use(VueApexCharts);
-
+  app.vueApp.component('VDateField', VDateField);
 })

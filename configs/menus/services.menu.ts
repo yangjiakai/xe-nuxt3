@@ -6,7 +6,7 @@ export default [
     items: [
       {
         icon: "solar:slider-minimalistic-horizontal-line-duotone",
-        text: "用户一览",
+        text: "ユーザー一覧",
         link: "/user/list",
       },
     ],

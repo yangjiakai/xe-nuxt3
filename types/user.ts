@@ -1,4 +1,4 @@
-export type User = {
+export interface User {
   id: string; // assuming id is of type string
   avatar: string; // assuming avatar is a URL which is of type string
   username: string;
@@ -12,3 +12,15 @@ export type User = {
   portfolio_url: string | undefined; // assuming this can be a string or null if the user does not have a portfolio
   profile_image: any
 };
+
+
+export interface UserListRquest {
+  page: number;
+  limit: number;
+}
+
+export interface UserListResponse {
+  total: number;
+  data: User[];
+  code: number;
+}
